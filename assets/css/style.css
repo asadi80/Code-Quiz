@@ -1,0 +1,246 @@
+.sec{
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1{
+    font-size: 30px;
+}
+.timer{
+    width: 90%;
+    height: 90px;
+    margin: 20px auto;
+}
+#tim{
+    height: 35px;
+    width: 140px;
+    background-color: white;
+   font-size: 20px;
+}
+#t{
+    color: white;
+    font-size: 25px;
+    height: 39px;
+    width: 130px;
+    background-color: rgb(185, 184, 241);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main{
+    width: 70%;
+    height: 230px;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+    
+    text-align: center;
+}
+.answer-display{
+    height: 100px;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 400px;
+    margin-left: 237px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#answer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(61, 64, 245, 0.87);
+    color: white;
+    border-radius: 10px;
+    height: 65px;
+    width: 300px;
+    text-align: left;
+    font-size: 20px;
+}
+.header{
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.para{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(159, 160, 209, 0.87);
+    margin: 15px auto;
+    width: 230px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+#btn1{
+   font-size: 20px;
+    display: block;
+    margin-top: 5px;
+}
+#high-score{
+    display: none;
+}
+
+#question{
+    font-size: 30px;
+    text-align:left;
+   margin: 15px auto;
+   padding-top: 175px;
+}
+
+button{
+    background-color: rgba(61, 64, 245, 0.87);
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 163px;
+    margin-top: 15px;
+    font-size: 1.5vw;
+}
+.btn-primary {
+  display: block;
+    margin-left: 5px;
+    width: 280px;
+}
+#btn{
+    font-size: 25px;
+    width: 140px;
+    margin-top: 5px;
+}
+#answer:hover{
+    background-color: rgba(107, 109, 211, 0.87);
+    cursor:pointer;
+}
+#p1{
+    font-size: 30px;
+    text-align: left;
+    margin-top: 15px;
+}
+#pa{
+    font-size: 25px;
+   width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#input{
+    margin-top: 5px;
+    height: 45px;
+    width: 380px;
+    border-radius: 10px;
+}
+#submit{
+    width: 100px;
+    font-size: 25px;
+}
+#hs{
+    font-size: 25px;
+}
+#ns{
+    font-size: 20px;
+    margin-top: 5px;  
+}
+p{
+   margin-top: 15px;
+   font-size: 20px;
+}
+#goback{
+    font-size: 20px;
+    width: 165px;
+}
+#chs{
+    font-size: 20px;
+    width: 165px;
+}
+#div2 .ns:nth-child(even){
+    background-color: gray;
+}
+
+
+[class*="col-"] {
+    width: 100%;
+}
+ 
+@media only screen and (max-width: 1600px)   {
+    .answers{
+        flex-direction: column;
+        height: auto;
+        margin: 10px 42px;
+        width: 60%;
+    }
+    #answer{
+        box-shadow:none;
+        
+       
+      margin: 9px auto;
+      height: 58px;
+        width:205px;
+        font-size: 20px;
+       
+       
+    }
+    #input{
+        width: auto;
+        border-radius: 10px;
+     }
+     .main{
+        
+        height: auto;
+    }
+    .sec{
+        box-shadow:none;
+        margin-top: 125px;
+    }
+   
+    #t{
+        
+        box-shadow: none;
+        font-size: 20px;
+        height: 29px;
+        width: 100px;
+    }
+    .para{
+        
+        box-shadow: none;
+        background-color: rgba(61, 64, 245, 0.87);
+        margin: 15px auto;
+        width: 150px;
+        font-size: 25px;
+        
+        
+    }
+    #question{
+       
+        font-size: 24px;
+        padding-top: 0px;
+       
+    }
+    #submit{
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+        width:83px;
+        font-size: 20px;
+     
+    }
+    .timer{
+        width: 90%;
+        height: 30px;
+     
+        margin: 20px auto;
+    }
+    .header{
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+    .btn-primary {
+        
+        margin-top: 5px;
+        width: 200px;
+    }
+    .h3{
+        font-size: 21px;
+        text-align: revert;
+    }
+}
+   

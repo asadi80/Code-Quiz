@@ -4,9 +4,6 @@ var timeLeft = 0
 var quizTime = 0
 var score = 0
 var timer = document.getElementById("time")
-
-
-
 var points = 0;
 var ans = ""
 let i =0;
@@ -17,8 +14,6 @@ var user = {
     score: points
    
 };
-
-
 
 highScoresArray=[];
 highScorsShow="";
@@ -129,11 +124,7 @@ var highScores =function(){
     document.getElementById("chs").onclick=function(){
         clesrHighScore();
     }
-   
 }
-
-// set initial timer value and fire off two functions
-
 //  function changes timer display every tick (second)
 function startTimer() {
     timer.innerHTML = (timeLeft);
@@ -141,7 +132,6 @@ function startTimer() {
 }
 //  function equates a tick to a second and determines when timer reaches zero
 function tick() {
-    
     if (timeLeft !== 0) {
      timeLeft--;
      timer.innerHTML = (timeLeft);
@@ -149,10 +139,8 @@ function tick() {
     else {
         clearInterval(quizTime)
         timeLeft=0;
-        end();
-       
+        start();
     }
-    
     return;
 }
     // stop timer and subtract 10
@@ -160,7 +148,6 @@ function stopTimer() {
     clearInterval(quizTime);
     timeLeft-=10;
     startTimer();
-    
 }
         // input function
 var inputName =function(){
@@ -178,12 +165,10 @@ var inputName =function(){
     }
     pa.innerHTML = "Your final score is"+ " "  +points;
     document.getElementById("answers").appendChild(pa); 
-
     div1 = document.createElement("div");
     div1.className="input-group mb-3";
     div1.setAttribute("id", "div1");
     document.getElementById("answers").appendChild(div1); 
-
     var input = document.createElement("input");
     input.type = "text";
     input.className="form-control";
@@ -193,7 +178,6 @@ var inputName =function(){
     input.setAttribute ("aria-label","Recipient's username" );
     input.setAttribute("aria-describedby", "button-addon2");
     document.getElementById("div1").appendChild(input); 
-
     var submit = document.createElement("button");
     submit.className= "btn btn-primary";
     // submit.setAttribute("onclick","highScores()");
@@ -228,7 +212,8 @@ function end() {
 }
         // strat function
 var start = function(){
-    clearInterval(quizTime)
+    clearBox();
+    clearInterval(quizTime);
     timeLeft = 40;
     points = 0;
     ans = ""
@@ -335,23 +320,16 @@ var checkingAnswer = function(){
             // console.log("wrong");
             wrongAnswer();
             stopTimer();
-            
-            
         } 
-    
         if (i < arr.length) {
             i++;
-        
         // console.log(i)   
         questionsAndAnswers();   
-    
         }else{
             return;
-            
         }
     }else{
         return;
-        
     }
        
 }

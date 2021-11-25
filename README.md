@@ -1,9 +1,10 @@
 # Code Quiz.
-Its a school projact. when you click start quiz, you will be presented question and four answers. i set the timer to 40 . You have to select the corect answer. If you had selected the wrong one  then 10 points will be subtracted from the timer. 
-If you answers all the question or the timer reaches zero then you will be oresented with a new window so you can input your intials and your score.
+Its a school projact. 
+when you click start quiz, you will be presented by question and four answers with timer. iset the timer to 40 . 
+You have to select the corect answer. If you had selected the wrong one  then 10 points will be subtracted from the timer. 
+If you answers all the question  then you will be presented with a new window s you can input your intials and your score.
 after that you can take the quiz againg or you can clear the high scores.
 
-also, i added feature to the code. if the timer reach 10 the bacround will change to read.
 
 ## User Story.
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
@@ -23,7 +24,10 @@ WHEN the game is over
 THEN I can save my initials and score
 
 ## Secreen Shot
+![Screenshot (11)](https://user-images.githubusercontent.com/89751266/143387144-31a0cc61-3608-46eb-ab73-44ea0861387a.png)
 
+## Demo
+https://user-images.githubusercontent.com/89751266/143387728-9f0c28f4-1acc-4032-bfd3-a02210b25d01.mp4
 
 
 
@@ -34,7 +38,7 @@ THEN I can save my initials and score
 * Javascriptt
 
 ## Website
-
+https://asadi80.github.io/Code-Quiz/
 
 ## You can reach me on
 ---
